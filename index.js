@@ -68,7 +68,7 @@ var SplunkLogger = require("splunk-logging").Logger;
 
 var config = {
     token: "c8edeac1-1458-4fa4-978b-a0143bbd6f07",
-    url: "http://172.20.4.2:8089"
+    url: "http://172.20.4.2:8088"
 };
 
 var Logger = new SplunkLogger(config);
