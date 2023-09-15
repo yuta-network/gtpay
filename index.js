@@ -67,8 +67,8 @@ app.post('/', function (req, res) {
 var SplunkLogger = require("splunk-logging").Logger;
 
 var config = {
-    token: "your-token-here",
-    url: "https://splunk.local:8088"
+    token: "c8edeac1-1458-4fa4-978b-a0143bbd6f07",
+    url: "http://172.20.4.2:8089"
 };
 
 var Logger = new SplunkLogger(config);
