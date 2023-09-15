@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--===== CSS =====-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>GTPay</title>
+    </head>
+    <body>
+        <div class="l-form">
+            <form action="" class="form" method="post">
+                <h1 class="form__title"><img src="../public/img/logo.png" width="200"></h1>
+                <h1>GTPay ERP Login</h1>
+                <br>
+                <%if (locals.success ) { %>
+                    <p class="success">Successfully LoggedIn!</p>
+                <% } %>
+                <%if (locals.success ==0) { %>
+                    <p class="error">Username or Password Wrong!</p>
+                <% } %>
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " name="email">
+                    <label for="" class="form__label">Email</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="password" class="form__input" placeholder=" " name="password">
+                    <label for="" class="form__label">Password</label>
+                </div>
+
+                <input type="submit" class="form__button" value="Sign In">
+            </form>
+        </div>
+        <%if (locals.row) { %>
+            <p class="query"><%= row %> </p>
+        <% } %>
+    </body>
+</html>

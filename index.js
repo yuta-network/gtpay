@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const conn = mysql.createConnection({
-    host: 'localhost',
+    host: '172.20.4.6',
     user: 'root',
-    password: '171202Vn',
-    database: 'myapp',
+    password: '**123**GTPay',
+    database: 'gtpay',
     port: '3306'
 });
 conn.connect((err) => {
@@ -21,6 +21,9 @@ const app = express();
 const path = require('path');
 const bodyParser = require("body-parser");
 const { use } = require('express/lib/application');
+const morgan = require('morgan')
+app.use(morgan('combined'))
+
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/'));

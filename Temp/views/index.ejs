@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Trang chủ</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Trang chủ</a></li>
+        <li><a href="/logout">Đăng xuất</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <% if (user) { %>
+      <p>Xin chào, <%= user.username %>!</p>
+    <% } else { %>
+      <p>Vui lòng đăng nhập để tiếp tục.</p>
+    <% } %>
+  </main>
+</body>
+</html>
