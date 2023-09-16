@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 const conn = mysql.createConnection({
-    host: '172.20.4.6',
+    host: '172.20.5.1',
     user: 'root',
     password: '**123**GTPay',
     database: 'gtpay',
